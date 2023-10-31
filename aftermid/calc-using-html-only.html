@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Calculator</title>
+    <style>
+      body{
+        background-color:cadetblue;
+      }
+        *{
+            font-size: 1.2rem;
+        }
+        #cc{
+            background-color: bisque;
+            border: 2px solid black;
+        }
+        input{
+          border: 2px solid black;
+
+        }
+
+    </style>
+  </head>
+  <body>
+    
+    <form name="cal">
+      <fieldset>
+          <legend >Calculator</legend>
+        <input type="number" name="num1" placeholder="Enter number" onclick="cal.res.value=this.value"> +
+        <input type="number" name="num2" placeholder="Enter number" onclick="cal.res.value+='+'+'1'">
+        <br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+        <input type="text" placeholder="ANSWER" id="cc" size="5" onclick="cal.res.value = eval(cal.res.value)">
+        <br><br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        <input type="text" name="res">
+      </fieldset>
+      </form>
+    
+  </body>
+</html>
