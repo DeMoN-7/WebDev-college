@@ -88,4 +88,32 @@ User Pass Validator
         }
 
 
-        
+
+Change the size of image 
+
+<img src="logo1.png"  border="3" id="img1">
+    <br><br>
+    <input type="button" value="increase" onclick="resizeB()">
+    <input type="button" value="decrease" onclick="resizeS()">
+  </body>
+  <script>
+    function resizeB(){
+
+        var img=document.getElementById("img1");
+        img.style.height=(img.offsetHeight+10)+"px";
+        img.style.width=(img.offsetWidth+10)+"px";
+    }
+    function resizeS(){
+
+        var img=document.getElementById("img1");
+        img.style.height=(img.offsetHeight-10)+"px";
+        img.style.width=(img.offsetWidth-10)+"px";
+    }
+  </script>
+
+
+
+
+
+
+
