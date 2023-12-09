@@ -1,0 +1,91 @@
+Prime Number
+
+let a=prompt("Enter the number");
+let z=0;
+            for(let i=2;i<=a/2;i++){
+                if(a%i==0){
+                    z++;22
+                    break;
+                }
+
+            }
+            if (z==0){
+                document.write("Prime Number")
+            }
+            else{
+                document.write("Not Prime Number")
+            }
+
+
+Prime Number using input
+
+<input type="number" name="ee" id="inp" placeholder="Enter the number">
+<!-- <button onclick="isPrime()">Check</button> -->
+<input type="button" value="check" onclick="isPrime()">
+        <script>
+// let a=prompt("Enter the number");
+function isPrime()
+{
+
+    let a=document.getElementById("inp").value;
+    let z=0;
+    
+    for(let i=2;i<=a/2;i++){
+        if(a%i==0){
+            z++;22
+            break;
+        }
+        
+    }
+    if (z==0){
+        document.write("Prime Number")
+    }
+    else{
+        document.write("Not Prime Number")
+    }
+}
+
+
+
+
+Copy From one input to other 
+
+
+<input type="text"  id="inp1" placeholder="Enter">
+        <input type="text"  id="inp2" placeholder="Enter">
+        <input type="button" value="Copy" onclick="copy()">
+        <script>
+            function copy(){
+                var a=document.getElementById("inp1").value;
+            document.getElementById("inp2").value=a;
+            }
+            
+        </script>
+
+
+User Pass Validator
+
+
+    <input type="text"  id="user" placeholder="Username">
+        <input type="password"  id="pass" placeholder="Enter the password">
+        <input type="button" value="Check " onclick="check()">
+    </body>
+    <script>
+        function check(){
+
+            var user=document.getElementById("user").value;
+            var pass=document.getElementById("pass").value;
+            if(user==null || user==""){
+                alert("Please fill username");
+            }
+            if(pass==null || pass==""){
+                alert("Please fill password");
+            }
+            if(pass.length<8)
+            {
+                alert("Password should be atleast 8 char long");
+            }
+        }
+
+
+        
